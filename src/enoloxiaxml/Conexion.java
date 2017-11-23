@@ -125,7 +125,7 @@ public class Conexion {
                         System.out.print(sr.getText());
                         
                         break;
-                    case XMLStreamReader.END_ELEMENT:
+                   case XMLStreamReader.END_ELEMENT: 
                         if(sr.getLocalName()=="analise"){
                     try { 
                         ps = conn.prepareStatement("insert into xerado(num,nomeuva,tratacidez,total)values(?,?,?,?)");
